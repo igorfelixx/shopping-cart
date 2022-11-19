@@ -7,7 +7,7 @@ import Header from './components/front/Header/Header';
 import Routes from './components/front/Routes/Routes';
 
 import { BrowserRouter } from 'react-router-dom'
-import React, { useInsertionEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
 
