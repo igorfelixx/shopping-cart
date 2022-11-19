@@ -15,7 +15,8 @@ function App() {
 
   const [cartItems, setCartItems] = useState([])
 
-  const handleAddProduct = (product) => {
+  const handleAddProduct = (product) => {   
+    
     const productExist = cartItems.find((item) => item.id === product.id)
 
     if (productExist) {
@@ -25,7 +26,7 @@ function App() {
           : item))
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }])
-    }
+    }  
   }
 
   const handleRemoveProduct = (product) => {

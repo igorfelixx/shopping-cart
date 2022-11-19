@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Products.css"
 
 export default function Products({productItems, handleAddProduct}) {
+    
     return( 
         <div className='products'>
             {productItems.map((productItem) => (

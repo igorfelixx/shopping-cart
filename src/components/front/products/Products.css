@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: radial-gradient(#005b8f, purple);
+    background-color: #005b8f;
+    box-shadow: 5px 5px 14px purple;
     border-radius: 5px;
 }
 
@@ -16,7 +17,7 @@
     overflow: hidden;
     padding: 10px;
     margin: 40px 20px;
-    background-color: white;
+    background-color: #1a1a1a;
 }
 
 .card:hover{
@@ -27,9 +28,8 @@
 .product-image{
     width: 100%;
     max-width: 300px;
-    min-height: 200px;
+    height: 200px;
     display: block;
-    object-fit: cover;
 }
 
 .product-name{
@@ -37,6 +37,7 @@
     margin: 10px 0px;
     font-weight: 700;
     text-align: center;
+    color: white;
 }
 
 .product-price{
@@ -45,6 +46,7 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+    color: yellow;
 }
 
 .product-add-button{
