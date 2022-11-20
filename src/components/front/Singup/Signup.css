@@ -1,3 +1,7 @@
+.signup-body{
+    height: 100vh;
+}
+
 .signup{
     margin: 0 auto;
     width: 80%;
@@ -9,4 +13,5 @@
     height: 60vh;
     font-size: 20px;
     font-weight: 700;    
+    border-radius: 5px;
 }

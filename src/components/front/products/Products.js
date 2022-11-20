@@ -1,8 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import "./Products.css"
 
-export default function Products({productItems, handleAddProduct}) {
+export default function Products({productItems, handleAddProduct}) {    
+
+    function addedCart() {       
+
+        const addedCart = document.querySelector(".added-cart")
+        
+        addedCart.style.visibility = "visible";
+    
+        setTimeout(() => {
+           addedCart.style.visibility = "hidden";
+        }, 3000);
+        
+    }    
     
     return( 
         <div className='products'>
@@ -20,8 +31,8 @@ export default function Products({productItems, handleAddProduct}) {
                     <div className='product-price'>
                         ${productItem.price}
                     </div>
-                    <div>
-                        <button className='product-add-button' onClick={() => {handleAddProduct(productItem)}}>
+                    <div className='buttonClick'>
+                        <button className='product-add-button' onClick={() => {handleAddProduct(productItem, addedCart())}}>
                             Add to cart
                         </button>
                     </div>

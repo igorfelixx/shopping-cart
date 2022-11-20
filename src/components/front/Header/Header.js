@@ -33,8 +33,13 @@ export default function Header({cartItems}) {
                         </li>
                     </ul>
                 </div>
+
+                
             </header>
 
+            <div className='added-cart'>
+                    Product added to cart
+                </div>
            
         </>
     )
