@@ -6,7 +6,7 @@ export default function Header({cartItems}) {
     
     return (
         <>
-            <header className='header'>
+            <header id='header' className='header'>
                 <div>
                     <h1>
                         <Link to="/" className="logo">Electronics Shop</Link>

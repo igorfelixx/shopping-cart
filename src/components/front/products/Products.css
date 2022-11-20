@@ -20,6 +20,10 @@
     background-color: #1a1a1a;
 }
 
+a{
+    text-decoration: none;
+}
+
 .card:hover{
     transform: perspective(1000px) translateZ(50px);
     transition: 1s;

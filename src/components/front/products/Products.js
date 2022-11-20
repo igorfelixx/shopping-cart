@@ -32,9 +32,11 @@ export default function Products({productItems, handleAddProduct}) {
                         ${productItem.price}
                     </div>
                     <div className='buttonClick'>
-                        <button className='product-add-button' onClick={() => {handleAddProduct(productItem, addedCart())}}>
-                            Add to cart
-                        </button>
+                        <a href="#header">
+                            <button className='product-add-button' onClick={() => {handleAddProduct(productItem, addedCart())}}>
+                                Add to cart
+                            </button>
+                        </a>
                     </div>
                 </div>
             ))}
